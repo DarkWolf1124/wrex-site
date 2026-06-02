@@ -3,7 +3,6 @@ import { stripe } from '@/lib/stripe';
 import { getAdminClient } from '@/lib/supabase';
 import bcrypt from 'bcryptjs';
 
-export const config = { api: { bodyParser: false } };
 
 export async function POST(req) {
   const body = await req.text();
