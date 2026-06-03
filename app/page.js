@@ -16,7 +16,7 @@ export default function HomePage() {
         padding: '0 24px', height: 64,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <span className="font-display" style={{ fontSize: 26, fontWeight: 700, letterSpacing: 6, color: '#fff' }}>WREX</span>
+        <span className="font-display" style={{ fontSize: 26, fontWeight: 700, letterSpacing: 6, color: '#fff' }}/> 
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
           <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
@@ -193,7 +193,7 @@ export default function HomePage() {
         padding: '48px 24px', textAlign: 'center',
         borderTop: '1px solid rgba(77,171,247,0.1)',
       }}>
-        <span className="font-display" style={{ fontSize: 22, fontWeight: 700, letterSpacing: 6, color: '#fff', display: 'block', marginBottom: 20 }}>WREX</span>
+        <span className="font-display" style={{ fontSize: 22, fontWeight: 700, letterSpacing: 6, color: '#fff', display: 'block', marginBottom: 20 }}/> 
         <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: 13, marginBottom: 20 }}>We've got you covered.</p>
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 32 }}>
           <Link href="/partners/login" style={{ color: 'rgba(255,255,255,0.4)', fontSize: 13, textDecoration: 'none' }}>Partner Login</Link>
