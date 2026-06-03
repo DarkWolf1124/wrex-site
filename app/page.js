@@ -16,7 +16,7 @@ export default function HomePage() {
         padding: '0 24px', height: 64,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <img src="/wrex.svg" alt="Wrex" style={{ height: 44, objectFit: "contain", width: "auto" }}/> 
+        <img src="/wrexlogo.jpg" alt="Wrex" style={{ height: 44, objectFit: "contain", width: "160px" }}/> 
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
           <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
