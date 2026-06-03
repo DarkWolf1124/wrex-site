@@ -16,7 +16,7 @@ export default function HomePage() {
         padding: '0 24px', height: 64,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <img src="/wrex.svg" alt="Wrex" style={{ height: 36, objectFit: "contain", mixBlendMode: "screen" }}/> 
+        <img src="/wrex.svg" alt="Wrex" style={{ height: 52, objectFit: "contain" }}/> 
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
           <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
@@ -35,9 +35,6 @@ export default function HomePage() {
         <div className="glow-blob" style={{ width: 500, height: 500, background: 'rgba(77,171,247,0.08)', top: '10%', left: '50%', transform: 'translateX(-50%)' }}/>
         <div className="glow-blob" style={{ width: 300, height: 300, background: 'rgba(0,212,200,0.06)', bottom: '20%', right: '10%' }}/>
 
-        <div style={{ opacity: 1 }}>
-          <img src="/wrex.svg" alt="Wrex" style={{ height: 80, marginBottom: 40, objectFit: 'contain', mixBlendMode: 'screen' }}/>
-        </div>
 
         <h1 className="font-display" style={{
           fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 700, letterSpacing: 2,
