@@ -16,7 +16,7 @@ export default function HomePage() {
         padding: '0 24px', height: 64,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <span className="font-display" style={{ fontSize: 26, fontWeight: 700, letterSpacing: 6, color: '#fff' }}/> 
+        <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 36, objectFit: "contain" }}/> 
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
           <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
@@ -42,7 +42,7 @@ export default function HomePage() {
         <h1 className="font-display" style={{
           fontSize: 'clamp(40px, 7vw, 80px)', fontWeight: 700, letterSpacing: 2,
           lineHeight: 1.05, marginBottom: 24,
-          animation: 'fadeUp 0.7s 0.1s ease-out forwards', opacity: 0,
+          opacity: 1,
         }}>
           When accidents happen,<br/>
           <span style={{ color: '#4DABF7' }}>we've got you covered.</span>
@@ -51,7 +51,7 @@ export default function HomePage() {
         <p style={{
           fontSize: 18, color: 'rgba(255,255,255,0.6)', maxWidth: 520,
           lineHeight: 1.7, marginBottom: 48,
-          animation: 'fadeUp 0.7s 0.2s ease-out forwards', opacity: 0,
+          opacity: 1,
         }}>
           Wrex guides you through every step of an accident — documenting the scene, 
           contacting insurance, and connecting you with trusted towing partners near you.
@@ -59,7 +59,7 @@ export default function HomePage() {
 
         <div style={{
           display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center',
-          animation: 'fadeUp 0.7s 0.3s ease-out forwards', opacity: 0,
+          opacity: 1,
         }} id="download">
           <a href="https://apps.apple.com" target="_blank" rel="noreferrer"
             style={{
