@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="glow-blob" style={{ width: 500, height: 500, background: 'rgba(77,171,247,0.08)', top: '10%', left: '50%', transform: 'translateX(-50%)' }}/>
         <div className="glow-blob" style={{ width: 300, height: 300, background: 'rgba(0,212,200,0.06)', bottom: '20%', right: '10%' }}/>
 
-        <div style={{ animation: 'fadeUp 0.7s ease-out forwards', opacity: 0 }}>
+        <div style={{ opacity: 1 }}>
           <img src="https://i.imgur.com/r3xugsO.jpeg" alt="Wrex" style={{ height: 80, marginBottom: 40, objectFit: 'contain' }}/>
         </div>
 
