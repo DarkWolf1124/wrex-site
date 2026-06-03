@@ -16,7 +16,7 @@ export default function HomePage() {
         padding: '0 24px', height: 64,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 36, objectFit: 'contain' }}/>
+        <span className="font-display" style={{ fontSize: 26, fontWeight: 700, letterSpacing: 6, color: '#fff' }}>WREX</span>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
           <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
           <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
@@ -31,46 +31,12 @@ export default function HomePage() {
         alignItems: 'center', justifyContent: 'center',
         padding: '100px 24px 60px', textAlign: 'center', position: 'relative',
       }}>
-        <div className="glow-blob" st
-cat > app/page.js << 'EOF'
-'use client';
-import { useState } from 'react';
-import Link from 'next/link';
-
-export default function HomePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    <div style={{ background: '#080D18', minHeight: '100vh', color: '#fff', overflowX: 'hidden' }}>
-
-      {/* ── NAV ── */}
-      <nav style={{
-        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(12px)',
-        borderBottom: '1px solid rgba(77,171,247,0.15)',
-        padding: '0 24px', height: 64,
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      }}>
-        <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 36, objectFit: 'contain' }}/>
-        <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-          <a href="#how-it-works" className="nav-link" style={{ fontSize: 14 }}>How It Works</a>
-          <a href="#for-towers" className="nav-link" style={{ fontSize: 14 }}>For Towing Companies</a>
-          <Link href="/partners/login" className="nav-link" style={{ fontSize: 14 }}>Partner Login</Link>
-          <a href="#download" className="wrex-btn" style={{ padding: '8px 20px', fontSize: 13 }}>Get the App</a>
-        </div>
-      </nav>
-
-      {/* ── HERO ── */}
-      <section style={{
-        minHeight: '100vh', display: 'flex', flexDirection: 'column',
-        alignItems: 'center', justifyContent: 'center',
-        padding: '100px 24px 60px', textAlign: 'center', position: 'relative',
-      }}>
+        {/* Glow blobs */}
         <div className="glow-blob" style={{ width: 500, height: 500, background: 'rgba(77,171,247,0.08)', top: '10%', left: '50%', transform: 'translateX(-50%)' }}/>
         <div className="glow-blob" style={{ width: 300, height: 300, background: 'rgba(0,212,200,0.06)', bottom: '20%', right: '10%' }}/>
 
         <div style={{ animation: 'fadeUp 0.7s ease-out forwards', opacity: 0 }}>
-          <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 100, marginBottom: 40, objectFit: 'contain' }}/>
+          <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 80, marginBottom: 40, objectFit: 'contain' }}/>
         </div>
 
         <h1 className="font-display" style={{
@@ -100,6 +66,7 @@ export default function HomePage() {
               background: '#000', border: '1px solid rgba(255,255,255,0.2)',
               borderRadius: 12, padding: '12px 24px',
               display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', color: '#fff',
+              transition: 'border-color 0.2s',
             }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -126,6 +93,7 @@ export default function HomePage() {
           </a>
         </div>
 
+        {/* Scroll indicator */}
         <div style={{ marginTop: 80, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: 0.4 }}>
           <div style={{ width: 1, height: 48, background: 'linear-gradient(to bottom, #4DABF7, transparent)' }}/>
           <span style={{ fontSize: 11, letterSpacing: 2 }}>SCROLL</span>
@@ -138,6 +106,7 @@ export default function HomePage() {
         <h2 className="font-display" style={{ textAlign: 'center', fontSize: 'clamp(32px, 5vw, 52px)', fontWeight: 700, marginBottom: 64 }}>
           Calm in the chaos.
         </h2>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
           {[
             { num: '01', title: 'Tap for help', desc: 'The moment you\'re in an accident, tap the big button. Wrex walks you through exactly what to do — step by step.' },
@@ -171,6 +140,7 @@ export default function HomePage() {
           <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.55)', fontSize: 17, maxWidth: 580, margin: '0 auto 64px', lineHeight: 1.7 }}>
             Wrex Preferred Partners appear first when drivers near you need a tow — right at the moment of an accident.
           </p>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 64 }}>
             {[
               { icon: '📍', title: 'Location-based', desc: 'Only shown to drivers within 20 miles of your location.' },
@@ -188,6 +158,8 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          {/* Pricing card */}
           <div style={{
             maxWidth: 480, margin: '0 auto',
             background: 'linear-gradient(135deg, #0F1829, #0A1828)',
@@ -221,7 +193,7 @@ export default function HomePage() {
         padding: '48px 24px', textAlign: 'center',
         borderTop: '1px solid rgba(77,171,247,0.1)',
       }}>
-        <img src="https://i.imgur.com/eBWC14p.png" alt="Wrex" style={{ height: 40, objectFit: 'contain', marginBottom: 20 }}/>
+        <span className="font-display" style={{ fontSize: 22, fontWeight: 700, letterSpacing: 6, color: '#fff', display: 'block', marginBottom: 20 }}>WREX</span>
         <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: 13, marginBottom: 20 }}>We've got you covered.</p>
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 32 }}>
           <Link href="/partners/login" style={{ color: 'rgba(255,255,255,0.4)', fontSize: 13, textDecoration: 'none' }}>Partner Login</Link>
